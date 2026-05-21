@@ -39,8 +39,8 @@ Two strong options:
 - **In-browser models** (maximum privacy, no server):
   - WebLLM (`@mlc-ai/web-llm`) or `transformers.js` loading GGUF/ONNX in-browser.
   - Similar to fully in-browser tools where embeddings, generation, and RAG run inside the tab.  
-    - https://medium.com/@mrmendoza-dev/add-free-local-ai-to-your-web-apps-directly-in-browser-ae0559dc6a02  
-    - https://www.reddit.com/r/ollama/comments/1lpchao/timecapsuleslm_open_source_ai_deep_research/
+    - [WebLLM local AI example][medium-weblocal]  
+    - [TimeCapsule-SLM deep research][timecapsule]
 
 Practical strategy: support both. Use localhost Ollama for heavier tasks and a smaller in-browser model for quick/offline fallback.
 
@@ -94,7 +94,7 @@ Local Perplexity-style “Research Mode”:
 
 References:
 
-- https://www.reddit.com/r/ollama/comments/1lpchao/timecapsuleslm_open_source_ai_deep_research/
+- [TimeCapsule-SLM deep research][timecapsule]
 
 UX:
 
@@ -156,8 +156,8 @@ User modes:
 - Add “Local Providers” settings:
   - Ollama URL (`http://127.0.0.1:11434` default).
   - LM Studio/OpenAI-compatible endpoint.
-- Add WebLLM “Lite Model” in side panel (single `MLCEngine`, streaming, runtime stats).  
-  - https://medium.com/@mrmendoza-dev/add-free-local-ai-to-your-web-apps-directly-in-browser-ae0559dc6a02
+- Add WebLLM “Lite Model” in side panel using a single `MLCEngine` instance with streaming and runtime stats.  
+  - [WebLLM local AI example][medium-weblocal]
 
 ### 4.3 Deep Research module
 
@@ -166,7 +166,7 @@ User modes:
   - Extract + local-index corpus.
   - Multi-pass report with saved project artifact.
 - Use TimeCapsule-SLM style inspiration for local vectors and exportable capsules.  
-  - https://www.reddit.com/r/ollama/comments/1lpchao/timecapsuleslm_open_source_ai_deep_research/
+  - [TimeCapsule-SLM deep research][timecapsule]
 
 ### 4.4 Project-based memory
 
@@ -198,3 +198,6 @@ User modes:
 ---
 
 This approach yields a local, agentic, research-focused browser that feels close to Perplexity/Atlas while preserving self-hosted control and privacy guarantees.
+
+[medium-weblocal]: https://medium.com/@mrmendoza-dev/add-free-local-ai-to-your-web-apps-directly-in-browser-ae0559dc6a02
+[timecapsule]: https://www.reddit.com/r/ollama/comments/1lpchao/timecapsuleslm_open_source_ai_deep_research/
