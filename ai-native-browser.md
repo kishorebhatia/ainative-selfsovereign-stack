@@ -50,7 +50,7 @@ This is what makes it Perplexity/Atlas-like:
 
 - Browser tools: `open_url`, `click(selector)`, `type(text, selector)`, `scroll(direction)`, `extract_page({selectors})`, etc.  
   BrowserOS already includes many such tools. https://www.browseros.com/
-- Research tools: `search_web(query)`, `parallel_open_and_summarize(urls)`, `cluster_findings`, `rank_sources_by_quality_and_recency`.
+- Research tools: `search_web(query)`, `parallel_open_and_summarize(urls)`, `cluster_findings`, `rank_sources`.
 - File/RAG tools: `ingest_pdf`, `embed_and_store`, `query_corpus`.
 - Coding tools: `open_file`, `apply_patch`, `run_tests` via local MCP server or local RPC bridge.
 
