@@ -60,9 +60,9 @@ Agent loop: user goal → plan steps → call tools → evaluate → refine.
 
 - Session memory: conversations, visited URLs, extracted text, code context.
 - Local knowledge stores:
-  - Research notebook: SQLite/DuckDB + vector index (HNSW-based WASM index, local Qdrant, or transformers.js + IndexedDB/OPFS).
+  - Research notebook: SQLite/DuckDB + vector index (HNSW-based WASM index for portability, local Qdrant for higher-scale performance, or transformers.js + IndexedDB/OPFS for browser-native simplicity).
   - Workspace/project RAG corpora.
-- Store in local path (e.g., `~/.local-ai-browser`, with platform-specific equivalents on Windows/macOS) or browser storage (IndexedDB/OPFS).
+- Store in local path (e.g., `~/.local-ai-browser`, `%LOCALAPPDATA%\\local-ai-browser`, or `~/Library/Application Support/local-ai-browser`) or browser storage (IndexedDB/OPFS).
 - Provide explicit export/import for portability.
 
 ### 2.5 Privacy & Security
